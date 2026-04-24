@@ -100,6 +100,10 @@ import ItineraryDate from './Itinerarydate';
 import AllItineraryPages from './AllItineraryPages';
 import FunkyCursor from './StopMotionCursor';
 import GlobalLoader from './GlobalLoader';
+import PlanTrip from './pages/PlanTrip';
+import ItineraryPageNew from './pages/Itinerary';
+import BookingPage from './pages/Booking';
+import ChatWidget from './components/ChatWidget';
 
 const AppContent = () => {
   // 1. Set up a state to track loading
@@ -153,6 +157,9 @@ const AppContent = () => {
         <Route path="/FaqPage" element={<FaqPage />} />
         <Route path="/ItineraryDate" element={<ItineraryDate />} />
         <Route path="/AllItineraryPages" element={<AllItineraryPages />} />
+        <Route path="/plan" element={<PlanTrip />} />
+        <Route path="/itinerary" element={<ItineraryPageNew />} />
+        <Route path="/booking" element={<BookingPage />} />
       </Routes>
     </>
   );
@@ -166,9 +173,8 @@ function App() {
   return (
     <>
       <FunkyCursor />
-      
-        <AppContent />
-      
+      <AppContent />
+      <ChatWidget />
     </>
   );
 }

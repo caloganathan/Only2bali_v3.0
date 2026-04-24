@@ -1,0 +1,28 @@
+# Review artifacts
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.env
+
+# Node
+node_modules/
+.env.local
+.env.production
+
+# SQLite (local FastAPI dev fallback)
+*.db
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db

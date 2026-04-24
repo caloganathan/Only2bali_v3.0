@@ -90,6 +90,7 @@ import Tourguide from './Tourguide';
 import IndianFood from './Indianfood';
 import Paperwork from './paperwork';
 import Vendor from './vendor';
+import VendorOnboarding from './VendorOnboarding';
 import ExtraRequest from './ExtraRequest';
 import ItineraryPage from './ItineraryPage';
 import Settings from './Settings';
@@ -144,6 +145,7 @@ const AppContent = () => {
         <Route path="/Indianfood" element={<IndianFood />} />
         <Route path="/paperwork" element={<Paperwork />} />
         <Route path="/vendor" element={<Vendor />} />
+        <Route path="/vendor-onboarding" element={<VendorOnboarding />} />
         <Route path="/ExtraRequest" element={<ExtraRequest />} />
         <Route path="/ItineraryPage" element={<ItineraryPage />} />
         <Route path="/Settings" element={<Settings />} />
